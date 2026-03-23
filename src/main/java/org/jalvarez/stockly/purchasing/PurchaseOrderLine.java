@@ -2,7 +2,7 @@ package org.jalvarez.stockly.purchasing;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.jalvarez.stockly.enums.UnitEnum;
+import org.jalvarez.stockly.util.enums.UnitEnum;
 import org.jalvarez.stockly.supplier.SupplierItem;
 
 import java.math.BigDecimal;

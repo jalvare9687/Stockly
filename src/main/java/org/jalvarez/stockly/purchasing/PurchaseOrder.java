@@ -2,8 +2,7 @@ package org.jalvarez.stockly.purchasing;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.jalvarez.stockly.enums.PurchaseOrderStatus;
-import org.jalvarez.stockly.ingredient.Ingredient;
+import org.jalvarez.stockly.util.enums.PurchaseOrderStatus;
 import org.jalvarez.stockly.location.Location;
 import org.jalvarez.stockly.supplier.Supplier;
 import org.jalvarez.stockly.user.User;
