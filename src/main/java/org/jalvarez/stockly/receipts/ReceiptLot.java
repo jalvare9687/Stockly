@@ -2,8 +2,8 @@ package org.jalvarez.stockly.receipts;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.jalvarez.stockly.deliveries.DeliveryLine;
-import org.jalvarez.stockly.inventory.InventoryLot;
+import org.jalvarez.stockly.deliveries.model.DeliveryLine;
+import org.jalvarez.stockly.inventory.model.InventoryLot;
 
 import java.math.BigDecimal;
 

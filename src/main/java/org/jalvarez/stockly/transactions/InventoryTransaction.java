@@ -1,10 +1,9 @@
 package org.jalvarez.stockly.transactions;
-
+//modify sources to be nullable
 import jakarta.persistence.*;
 import lombok.*;
-import org.jalvarez.stockly.deliveries.Delivery;
-import org.jalvarez.stockly.enums.SourceType;
-import org.jalvarez.stockly.enums.TransactionType;
+import org.jalvarez.stockly.deliveries.model.Delivery;
+import org.jalvarez.stockly.util.enums.TransactionType;
 import org.jalvarez.stockly.location.Location;
 import org.jalvarez.stockly.purchasing.PurchaseOrder;
 import org.jalvarez.stockly.sales.Sale;
