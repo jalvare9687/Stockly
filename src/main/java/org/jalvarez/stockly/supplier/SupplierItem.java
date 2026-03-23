@@ -2,8 +2,8 @@ package org.jalvarez.stockly.supplier;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.jalvarez.stockly.enums.PackUom;
-import org.jalvarez.stockly.ingredient.Ingredient;
+import org.jalvarez.stockly.util.enums.PackUom;
+import org.jalvarez.stockly.ingredient.model.Ingredient;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;

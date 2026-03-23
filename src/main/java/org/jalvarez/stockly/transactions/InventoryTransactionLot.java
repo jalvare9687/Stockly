@@ -2,8 +2,7 @@ package org.jalvarez.stockly.transactions;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.jalvarez.stockly.ingredient.Ingredient;
-import org.jalvarez.stockly.inventory.InventoryLot;
+import org.jalvarez.stockly.inventory.model.InventoryLot;
 
 import java.math.BigDecimal;
 
