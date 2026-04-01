@@ -2,7 +2,7 @@ package org.jalvarez.stockly.user;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import org.jalvarez.stockly.location.Location;
+import org.jalvarez.stockly.location.model.Location;
 
 @Entity
 @Data

@@ -5,7 +5,7 @@ import org.jalvarez.stockly.ingredient.model.Ingredient;
 import org.jalvarez.stockly.inventory.dto.InventoryLotDto;
 import org.jalvarez.stockly.inventory.dto.InventoryLotMapper;
 import org.jalvarez.stockly.inventory.repository.InventoryLotRepository;
-import org.jalvarez.stockly.location.Location;
+import org.jalvarez.stockly.location.model.Location;
 import org.jalvarez.stockly.util.EntityLookupService;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

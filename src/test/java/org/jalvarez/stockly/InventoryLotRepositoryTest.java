@@ -7,7 +7,7 @@ import org.jalvarez.stockly.ingredient.repository.IngredientRepository;
 import org.jalvarez.stockly.ingredient.repository.IngredientTypeRepository;
 import org.jalvarez.stockly.inventory.model.InventoryLot;
 import org.jalvarez.stockly.inventory.repository.InventoryLotRepository;
-import org.jalvarez.stockly.location.Location;
+import org.jalvarez.stockly.location.model.Location;
 import org.jalvarez.stockly.location.repository.LocationRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -37,13 +37,14 @@ import java.util.UUID;
 public class InventoryLotRepositoryTest {
 
     private static final DockerImageName myImage = DockerImageName.parse("postgres:16-alpine").asCompatibleSubstituteFor("postgres");
-    private static final UUID UUID = new UUID(0L, 0L) ;
+    private static final UUID UUID = new UUID(0L, 0L);
 
     @Container
     @ServiceConnection
     static PostgreSQLContainer postgresqlContainer = new PostgreSQLContainer(myImage);
 
-    @Autowired InventoryLotRepository inventoryLotRepository;
+    @Autowired
+    InventoryLotRepository inventoryLotRepository;
     @Autowired
     LocationRepository locationRepository;
     @Autowired

@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.jalvarez.stockly.ingredient.model.Ingredient;
-import org.jalvarez.stockly.location.Location;
+import org.jalvarez.stockly.location.model.Location;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

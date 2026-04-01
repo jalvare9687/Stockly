@@ -83,7 +83,7 @@ public class InventoryLotControllerTest {
 
     @Test
     void getInventoryLotsByLocationShouldReturn200WithLots() throws Exception {
-        when(inventoryLotService.getByLocation(eq(1l), any(Pageable.class)))
+        when(inventoryLotService.getByLocation(eq(1L), any(Pageable.class)))
             .thenReturn(List.of(testDto));
 
         mvc.perform(

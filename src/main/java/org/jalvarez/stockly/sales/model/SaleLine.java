@@ -1,4 +1,4 @@
-package org.jalvarez.stockly.sales;
+package org.jalvarez.stockly.sales.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

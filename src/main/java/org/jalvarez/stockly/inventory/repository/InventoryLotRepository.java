@@ -2,7 +2,7 @@ package org.jalvarez.stockly.inventory.repository;
 
 import org.jalvarez.stockly.ingredient.model.Ingredient;
 import org.jalvarez.stockly.inventory.model.InventoryLot;
-import org.jalvarez.stockly.location.Location;
+import org.jalvarez.stockly.location.model.Location;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
