@@ -25,4 +25,12 @@ public class GlobalExceptionHandler {
     public String ingredientTypeNotFound(IngredientTypeNotFoundException e) {
         return e.getMessage();
     }
+
+    @ExceptionHandler(MenuItemNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public String menuItemNotFound(MenuItemNotFoundException e) { return e.getMessage(); }
+
+    @ExceptionHandler(SaleNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public String saleNotFound(SaleNotFoundException e) { return e.getMessage(); }
 }

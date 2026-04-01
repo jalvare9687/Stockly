@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.jalvarez.stockly.util.enums.DeliveryStatus;
-import org.jalvarez.stockly.location.Location;
+import org.jalvarez.stockly.location.model.Location;
 import org.jalvarez.stockly.purchasing.PurchaseOrder;
 import org.jalvarez.stockly.supplier.Supplier;
 

@@ -2,7 +2,6 @@ package org.jalvarez.stockly.supplier;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.jalvarez.stockly.location.Location;
 
 @Entity
 @AllArgsConstructor
