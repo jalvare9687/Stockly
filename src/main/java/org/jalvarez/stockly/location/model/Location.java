@@ -1,4 +1,4 @@
-package org.jalvarez.stockly.location;
+package org.jalvarez.stockly.location.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -42,7 +42,9 @@ public class Location {
 
     @PrePersist
     void onCreate() {
-        this.createdAt = LocalDateTime.now();
+        if (createdAt == null) {
+            createdAt = LocalDateTime.now();
+        }
         this.updatedAt = this.createdAt;
     }
 

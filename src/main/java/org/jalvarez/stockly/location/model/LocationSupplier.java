@@ -1,4 +1,4 @@
-package org.jalvarez.stockly.location;
+package org.jalvarez.stockly.location.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.time.LocalDateTime;
 
 @Entity
@@ -43,7 +42,9 @@ public class LocationSupplier {
 
     @PrePersist
     void onCreate() {
-        this.createdAt = LocalDateTime.now();
+        if (this.createdAt == null) {
+            this.createdAt = LocalDateTime.now();
+        }
         this.updatedAt = this.createdAt;
     }
 
