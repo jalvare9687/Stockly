@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.jalvarez.stockly.util.enums.PurchaseOrderStatus;
 import org.jalvarez.stockly.location.model.Location;
-import org.jalvarez.stockly.supplier.Supplier;
+import org.jalvarez.stockly.supplier.model.Supplier;
 import org.jalvarez.stockly.user.User;
 
 import java.time.LocalDateTime;

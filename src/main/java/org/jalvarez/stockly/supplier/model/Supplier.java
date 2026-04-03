@@ -1,4 +1,4 @@
-package org.jalvarez.stockly.supplier;
+package org.jalvarez.stockly.supplier.model;
 
 import jakarta.persistence.*;
 import lombok.*;

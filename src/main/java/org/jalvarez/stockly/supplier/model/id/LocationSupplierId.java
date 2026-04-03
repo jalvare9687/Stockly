@@ -1,4 +1,4 @@
-package org.jalvarez.stockly.location.model;
+package org.jalvarez.stockly.supplier.model.id;
 
 import jakarta.persistence.Embeddable;
 import lombok.*;
