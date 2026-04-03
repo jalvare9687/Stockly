@@ -8,7 +8,7 @@ import lombok.Setter;
 import org.jalvarez.stockly.util.enums.DeliveryStatus;
 import org.jalvarez.stockly.location.model.Location;
 import org.jalvarez.stockly.purchasing.PurchaseOrder;
-import org.jalvarez.stockly.supplier.Supplier;
+import org.jalvarez.stockly.supplier.model.Supplier;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

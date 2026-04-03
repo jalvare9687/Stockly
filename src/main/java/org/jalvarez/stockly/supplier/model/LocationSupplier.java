@@ -1,10 +1,11 @@
-package org.jalvarez.stockly.location.model;
+package org.jalvarez.stockly.supplier.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.jalvarez.stockly.supplier.model.id.LocationSupplierId;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
