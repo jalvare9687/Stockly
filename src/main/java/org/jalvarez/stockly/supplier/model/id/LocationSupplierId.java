@@ -14,4 +14,5 @@ public class LocationSupplierId implements Serializable {
 
     private Long supplierId;
     private Long locationId;
+
 }

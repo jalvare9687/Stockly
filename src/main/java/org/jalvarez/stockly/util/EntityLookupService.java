@@ -8,10 +8,9 @@ import org.jalvarez.stockly.location.model.Location;
 import org.jalvarez.stockly.location.repository.LocationRepository;
 import org.jalvarez.stockly.sales.model.Sale;
 import org.jalvarez.stockly.sales.repository.SaleRepository;
-import org.jalvarez.stockly.util.exception.IngredientNotFoundException;
-import org.jalvarez.stockly.util.exception.IngredientTypeNotFoundException;
-import org.jalvarez.stockly.util.exception.LocationNotFoundException;
-import org.jalvarez.stockly.util.exception.SaleNotFoundException;
+import org.jalvarez.stockly.supplier.model.Supplier;
+import org.jalvarez.stockly.supplier.repository.SupplierRepository;
+import org.jalvarez.stockly.util.exception.*;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -20,12 +19,14 @@ public class EntityLookupService {
     private final IngredientRepository ingredientRepository;
     private final IngredientTypeRepository ingredientTypeRepository;
     private final SaleRepository saleRepository;
+    private final SupplierRepository supplierRepository;
 
-    public EntityLookupService(LocationRepository locationRepository, IngredientRepository ingredientRepository, IngredientTypeRepository ingredientTypeRepository, SaleRepository saleRepository) { //simplify this
+    public EntityLookupService(LocationRepository locationRepository, IngredientRepository ingredientRepository, IngredientTypeRepository ingredientTypeRepository, SaleRepository saleRepository,  SupplierRepository supplierRepository) { //simplify this
         this.locationRepository = locationRepository;
         this.ingredientRepository = ingredientRepository;
         this.ingredientTypeRepository = ingredientTypeRepository;
         this.saleRepository = saleRepository;
+        this.supplierRepository = supplierRepository;
     }
 
     public Location findLocation(Long locationId) {
@@ -42,5 +43,8 @@ public class EntityLookupService {
 
     public Sale findSale(Long saleId) {
         return saleRepository.findById(saleId).orElseThrow(() -> new SaleNotFoundException("Sale not found: " + saleId));
+    }
+    public Supplier findSupplier(Long supplierId) {
+        return supplierRepository.findById(supplierId).orElseThrow(() -> new SupplierNotFoundException("Supplier not found: " + supplierId));
     }
 }
