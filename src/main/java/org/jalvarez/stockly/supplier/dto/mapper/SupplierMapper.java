@@ -1,5 +1,7 @@
-package org.jalvarez.stockly.supplier.dto;
+package org.jalvarez.stockly.supplier.dto.mapper;
 
+import org.jalvarez.stockly.supplier.dto.LocationSupplierDto;
+import org.jalvarez.stockly.supplier.dto.SupplierDto;
 import org.jalvarez.stockly.supplier.model.LocationSupplier;
 import org.jalvarez.stockly.supplier.model.Supplier;
 

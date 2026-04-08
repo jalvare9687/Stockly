@@ -69,10 +69,10 @@ public class SupplierItem {
      * If you need "only one primary per ingredient", enforce via app logic or partial unique index.
      */
     @Column(name = "is_primary", nullable = false)
-    private boolean primary = false;
+    private Boolean primary = false;
 
     @Column(name = "is_active", nullable = false)
-    private boolean active = true;
+    private Boolean active = true;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     private OffsetDateTime createdAt;

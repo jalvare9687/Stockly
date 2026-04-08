@@ -37,4 +37,9 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(SupplierNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public String supplierNotFound(SupplierNotFoundException e) { return e.getMessage(); }
+
+    @ExceptionHandler(SupplierItemNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public String supplierItemNotFound(SupplierItemNotFoundException e) { return e.getMessage(); }
+
 }

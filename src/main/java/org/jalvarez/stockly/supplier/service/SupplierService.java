@@ -2,7 +2,7 @@ package org.jalvarez.stockly.supplier.service;
 
 import org.jalvarez.stockly.supplier.dto.LocationSupplierDto;
 import org.jalvarez.stockly.supplier.dto.SupplierDto;
-import org.jalvarez.stockly.supplier.dto.SupplierMapper;
+import org.jalvarez.stockly.supplier.dto.mapper.SupplierMapper;
 import org.jalvarez.stockly.supplier.model.Supplier;
 import org.jalvarez.stockly.supplier.repository.LocationSupplierRepository;
 import org.jalvarez.stockly.supplier.repository.SupplierRepository;
